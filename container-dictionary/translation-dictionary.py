@@ -35,8 +35,8 @@ translation = english_to_french_dictionary.get(my_word)
 translation2= english_to_bulgarian_dictionary.get(my_word)
 
 if my_word in english_to_french_dictionary:
-    print("{} means {}".format (my_word, translation))
+    print("{} is {} in French.".format (my_word, translation))
 elif my_word in english_to_bulgarian_dictionary:
-    print("{} means {}".format (my_word, translation2))  
+    print("{} is {} in Bulgarian.".format (my_word, translation2))  
 else:
-        print("{} is not in this dictionary. Please try another word.") 
+        print(f"{my_word} is not in this dictionary. Please try another word.") 
