@@ -10,7 +10,7 @@ password = ""
 username = ""
 
 # looping will continue when wrong input for five times and ask again, and would locked the account.
-while username!='hdsm'  and password!='smile' and count < 5:
+while username!='hdsm' and password!='smile' and count < 5:
     # collect user input from CLI separately.
     username = input("Enter username: ")
     password = input("Enter password: ")
@@ -19,10 +19,10 @@ while username!='hdsm'  and password!='smile' and count < 5:
      # if match, grand and break
      print('You have access!')
      break
-    
-    elif username!='hdsm' and password!='smile':
-        # if doesn't match, ask to try again
-        print('Enter your username or your password.')
-        # after 5 attempts account will be locked
+    else:
         count+=1
-    print('Account looked.')
+        print('Enter your username or your password.')
+        # after 5 attempts account will be locked.
+        if count == 5:
+            print('Account locked.')
+    
