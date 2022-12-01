@@ -25,4 +25,4 @@ while username!='hdsm'  and password!='smile' and count < 5:
         print('Enter your username or your password.')
         # after 5 attempts account will be locked
         count+=1
-        print('Account looked.')
+    print('Account looked.')
