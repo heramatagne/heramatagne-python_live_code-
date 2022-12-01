@@ -33,6 +33,7 @@ language = input("Select the language of your choice. Enter FR for French or BG 
 if language.lower() == "fr":
     word = input("Enter your word: ")
     #English to French translation
+    word = word.lower()
     if word in english_to_french_dictionary:
         translation = english_to_french_dictionary.get(word)
         print(f"{word} is {translation} in French.")
@@ -41,6 +42,7 @@ if language.lower() == "fr":
 
 if language.lower() == "bg":
     word = input("Enter your word: ")
+    word = word.lower()
     #English to Bulgarian translation
     if word in english_to_bulgarian_dictionary:
         translation= english_to_bulgarian_dictionary.get(word)
